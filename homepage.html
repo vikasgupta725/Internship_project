@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ZeetaShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script>
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo_div">
+            <a href="homepage.html"><img src="images/homepage/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="html/cloudservices.html">Cloud Services</a></li>
+                    <li><a href="html/consulting.html">Consulting</a></li>
+                    <li><a href="html/socialmediamarketing.html">Digital Marketing</a></li>
+                    <li><a href="html/dropshipping.html">Drop Shipping</a></li>
+                    <li><a href="html/analytics.html">Analytics</a></li>
+                    <li><a href="html/paymentgateways.html">Payment Gateway</a></li>
+                </ul>
+            </li>
+            <li><a href="html/about.html">About Us</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="slides">
+        <div class="slideshow-container">
+
+            <div class="myslides2">
+                <div class="mySlides">
+                    <h1>ZeetaShop Cloud</h1>
+                    <p class="author">
+                        Our Cloud Services can provide data backup, big data analytics, and customer-facing web applications. We also provide elastic scalability with your business requirements which reduces the cost of infrastructure and other capital expenses.</p>
+                    <button type="button" onclick="location.href='html/cloudservices.html';" style="cursor: pointer;">Check it out</button>
+                </div>
+            </div>
+            <div class="myslides3">
+                <div class="mySlides">
+                    <h1>Best Digital Marketing Solutions</h1>
+                    <p class="author">Offering the best products and services to the existing and our new clients. We give the best practices in the process and technology which is essential to your business in retail and services commerce.</p>
+                    <button type="button" onclick="location.href='html/socialmediamarketing.html';" style="cursor: pointer;">Check it out</button>
+                </div>
+            </div>
+            <div class="myslides4">
+                <div class="mySlides">
+                    <h1>Business Consulting</h1>
+                    <p class="author">We help and guide our clients to make use of the best tools and technology to take the first mover advantage in their respective businesses and target the right audience. This is where we can help your business to stand out.</p>
+                    <button type="button" onclick="location.href='html/consulting.html';" style="cursor: pointer;">Check it out</button>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+    <div class="vikas">
+        <div class="vikas_grid">
+            <div class="vikas_item">
+                <img src="images/homepage/user.png" class="vikas_avator">
+                <h1>Trusted Services</h1>
+            </div>
+            <div class="vikas_item">
+                <img src="images/homepage/headphone1.png" class="vikas_avator">
+                <h1>24/7 Support</h1>
+            </div>
+            <div class="vikas_item">
+                <img src="images/homepage/achievement.png" class="vikas_avator">
+                <h1>Well Experienced</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="tile_layout">
+        <div class="shubham1">
+            <h1 class="heading">Our Services</h1>
+            <h2 class="heading">We provide the Best End-to-End Services</h2>
+            <hr class="horizontal_rule">
+            <div class="shubham1_grid-container ">
+                <div class="tile">
+                    <img src="images/homepage/analytics.png">
+                    <h1>Analytics</h1>
+                    <p>Understand your customer, curate your products according to current trends and meet customer satisfaction.
+                        <br>
+                        <span onclick="location.href='html/analytics.html';" style="cursor: pointer;">Learn more.</span></p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/multimedia.png">
+                    <h1>Cloud Services</h1>
+                    <p>Explore inside the most effective and beneficial cloud services to reduce the cost of computing and data storage.
+                        <br>
+                        <span onclick="location.href='html/cloudservices.html';" style="cursor: pointer;">Learn more.</span>
+                    </p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/output-onlinepngtools (2).png">
+                    <h1>Consulting Services</h1>
+                    <p>If you want to achieve the right level of growth, make the right decisions to provide a service that your customers value.
+                        <br>
+                        <span onclick="location.href='html/consulting.html';" style="cursor: pointer;">Learn more.</span>
+                    </p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/ad.png">
+                    <h1>Digital Marketing</h1>
+                    <p>Connecting customers to your brand. Helping you open windows of opportunity. Choose what matters to your business and your customers.
+                        <br>
+                        <span onclick="location.href='html/socialmediamarketing.html';" style="cursor: pointer;">Learn more.</span>
+                    </p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/payment.png">
+                    <h1>Payment Gateway</h1>
+                    <p>Using a self-checkout system can differentiate a retailer from competitors, optimize the checkout process, and attract more customers.
+                        <br>
+                        <span onclick="location.href='html/paymentgateways.html';" style="cursor: pointer;">Learn more.</span>
+                    </p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/dropshipping.png">
+                    <h1>Drop Shipping</h1>
+                    <p>We handle the order for you while you focus on the marketing. We support bundling and provide product photography services.
+                        <br>
+                        <span onclick="location.href='html/dropshipping.html';" style="cursor: pointer;">Learn more.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="shubham2">
+            <h1 class="heading">Our Portfolio</h1>
+            <h2 class="heading">We Specialize In</h2>
+            <hr class="horizontal_rule">
+            <div class="shubham2_grid-container">
+                <div class="tile">
+                    <img src="images/homepage/businessresource.png">
+                    <h1 ">Business Resource</h1>
+                    </div>
+                    <div class="tile ">
+                        <img src="images/homepage/businessconsulting.png " >
+                        <h1 >Business Consulting</h1>
+                    </div>
+                    <div class="tile ">
+                        <img src="images/homepage/appdevelopment.png " >
+                        <h1 >App Development</h1>
+                    </div>
+                    <div class="tile ">
+                        <img src="images/homepage/marketingstrategy.png " >
+                        <h1 >Marketing Strategy</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="shubham3 ">
+                <h1 class="heading ">Testimonials</h1>
+                <h2 class="heading ">What clients say</h2>
+                <hr class="horizontal_rule ">
+                <div class="shubham3_grid-container ">
+                    <div class="tile ">
+                        <img src="images/homepage/person1.jpeg " width = "180px " height="180px " style="border-radius: 50%; ">
+                        <p >"ZeetaShop gave me step-by-step guidance on how to grow my business and make more money.Thanks to this I was able to extend my reach and market to new customers. "<br><span style="color: #d3414c ; ">-Ben Jeffries</span></p>
+                    </div>
+                    <div class="tile ">
+                        <img src="images/homepage/person2.jpeg " width = "180px " height="180px " style="border-radius: 50%; ">
+                        <p >"My biggest win from ZeetaShop was understanding how to create a business that is custom-tailored for me and that allows me to work in my genius zone and reach the people who need my help the most. "<br><span style="color:
+                        #d3414c ; ">-Amy Jenkins</span></p>
+                    </div>
+                    <div class="tile ">
+                        <img src="images/homepage/person3.jpeg " width = "180px " height="180px " style="border-radius: 50%; ">
+                        <p >"I am seriously happy about running our store with the help of ZeetaShop. Powerful features and easy to set up, running an online store shouldn 't be this much fun."<br><span style="color: #d3414c ;">-Brandon Flowers</span></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="shubham4">
+                <h1 class="heading" >Recent Updates</h1>
+                <h2 class="heading">Our Latest Updates</h2>
+                <hr class="horizontal_rule">
+                <div class="shubham4_grid-container">
+                    <div class="tile">
+                        <img src="images/homepage/mahindra.png" >
+                        <p "><span style="color: #d3414c ;">ZeetaShop</span> now in Mahindra's top 200 eCommerce platforms</p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/bhutaniaward.png">
+                    <p><span style="color: #d3414c ;">ZeetaShop</span> wins VIBGYOR Award for The Best Web Portal 2019</p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/office.png">
+                    <p><span style="color: #d3414c ;">ZeetaShop</span> successfully opens its third office in Noida, Uttar Pradesh, India</p>
+                </div>
+                <div class="tile">
+                    <img src="images/homepage/gst.png">
+                    <p><span style="color: #d3414c ;">ZeetaShop</span> now an officially recognized GST merchant worldwide</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer id="footer">
+        <br>
+        <p><strong>CONTACT US</strong><br></p>
+        <p><strong>Address</strong><br>A - 60 First Floor<br>Sector - 58 Noida, Delhi - NCR 201301 India</p>
+        <p><strong>Hours</strong><br>Monday-Friday: 9:15 AM - 5:10 PM</p>
+        <a href="https://www.facebook.com/zeetashopservices/"><img src="images/homepage/facebookbox.png" alt="facebookbox" width="25px" height="25px"></a>
+        <a href="https://www.linkedin.com/company/340813/admin/"><img src="images/homepage/linkedin.png" alt="linkedin" width="25px" height="25px"></a>
+        <a href="https://twitter.com/marksmantech"><img src="images/homepage/twitter.png" alt="twitter" width="25px" height="25px"></a>
+    </footer>
+    <p style="text-align:center">Copyright 2020 | Privacy Policy | Disclaimer | ZeetaShop - Powered by Marksman Tech
+    </p>
+    <div class="newsletter">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <p style="font-size:38px;">Sign up for our Newsletter.</p>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <a href="#" class="button">Submit</a>
+                </form>
+            </div>
+        </div>
+        <h2></h2>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+            setTimeout(function() {
+                document.addEventListener('DOMContentLoaded', openNav());
+            }, 3000);
+        </script>
+    </div>
+    <script type='text/javascript' data-cfasync='false'>
+        window.purechatApi = {
+            l: [],
+            t: [],
+            on: function() {
+                this.l.push(arguments);
+            }
+        };
+        (function() {
+            var done = false;
+            var script = document.createElement('script');
+            script.async = true;
+            script.type = 'text/javascript';
+            script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+            document.getElementsByTagName('HEAD').item(0).appendChild(script);
+            script.onreadystatechange = script.onload = function(e) {
+                if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+                    var w = new PCWidget({
+                        c: 'c65d43f8-2ee1-4461-9d49-39383c4bbbe1',
+                        f: true
+                    });
+                    done = true;
+                }
+            };
+        })();
+    </script>
+</body>
+
+</html>
