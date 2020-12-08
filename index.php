@@ -1,15 +1,3 @@
 <?php
 include_once("homepage.html");
-include_once("about.html");
-include_once("analytics.html");
-include_once("cloudservices.html");
-include_once("consulting.html");
-include_once("contact.html");
-include_once("dropshipping.html");
-include_once("paymentgateways.html");
-include_once("socialmediamarketing.html");
-include_once("about.css");
-include_once("contact.css");
-include_once("homepage.css");
-include_once("services.css");
 ?>
